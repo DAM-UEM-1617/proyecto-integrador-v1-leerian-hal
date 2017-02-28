@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_W-ab8P36EeapAvzKil5zdw" name="NewModel">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_cYsTUP36EeapAvzKil5zdw" name="Proyecto">
+    <region xmi:id="_cjnw8P36EeapAvzKil5zdw" name="Region1">
+      <transition xmi:id="_5vXSYP36EeapAvzKil5zdw" source="_imkK0P36EeapAvzKil5zdw" target="_sjBM4P36EeapAvzKil5zdw"/>
+      <transition xmi:id="_6QebYP36EeapAvzKil5zdw" source="_sjBM4P36EeapAvzKil5zdw" target="_kdhFYP36EeapAvzKil5zdw">
+        <name xsi:nil="true"/>
+        <trigger xmi:id="_FBRrgP37EeapAvzKil5zdw" name="Sin Pagar"/>
+      </transition>
+      <transition xmi:id="_6quHYP36EeapAvzKil5zdw" source="_kdhFYP36EeapAvzKil5zdw" target="_jEjHUP36EeapAvzKil5zdw">
+        <trigger xmi:id="_PTEEYP37EeapAvzKil5zdw" name="Se cancela"/>
+      </transition>
+      <transition xmi:id="_7EHe0P36EeapAvzKil5zdw" source="_sjBM4P36EeapAvzKil5zdw" target="_kMNS8P36EeapAvzKil5zdw">
+        <trigger xmi:id="_F_-IYP37EeapAvzKil5zdw" name="Pagando"/>
+      </transition>
+      <transition xmi:id="_7jjz4P36EeapAvzKil5zdw" source="_kMNS8P36EeapAvzKil5zdw" target="_nf_X4P36EeapAvzKil5zdw">
+        <trigger xmi:id="_Ixz94P37EeapAvzKil5zdw" name="Planos"/>
+      </transition>
+      <transition xmi:id="_76584P36EeapAvzKil5zdw" source="_nf_X4P36EeapAvzKil5zdw" target="_nyXhUP36EeapAvzKil5zdw">
+        <trigger xmi:id="_Ljlh8P37EeapAvzKil5zdw" name="Brillos y Sombras"/>
+      </transition>
+      <transition xmi:id="_8XIl4P36EeapAvzKil5zdw" source="_nyXhUP36EeapAvzKil5zdw" target="_jEjHUP36EeapAvzKil5zdw">
+        <trigger xmi:id="_NzLmAP37EeapAvzKil5zdw" name="Terminado"/>
+      </transition>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_imkK0P36EeapAvzKil5zdw" name="Initial1"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_jEjHUP36EeapAvzKil5zdw" name="Final1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_kMNS8P36EeapAvzKil5zdw" name="Aprobado"/>
+      <subvertex xmi:type="uml:State" xmi:id="_kdhFYP36EeapAvzKil5zdw" name="No Aprobado"/>
+      <subvertex xmi:type="uml:State" xmi:id="_nf_X4P36EeapAvzKil5zdw" name="En Curso Inicial"/>
+      <subvertex xmi:type="uml:State" xmi:id="_nyXhUP36EeapAvzKil5zdw" name="En Curso Final"/>
+      <subvertex xmi:type="uml:State" xmi:id="_sjBM4P36EeapAvzKil5zdw" name="En Estudio"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_kw6igP36EeapAvzKil5zdw" name="StateMachine2"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_lPoe0P36EeapAvzKil5zdw" name="StateMachine3">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_JIfGkP39EeapAvzKil5zdw" name="StateMachine3"/>
+  </packagedElement>
+</uml:Model>
